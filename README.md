@@ -1,15 +1,19 @@
 # Quiz game to learn Kotlin and TypeScript
 
-I want to learn 2 new languages and here are some steps i will follow, based on my research:
+I want to learn 2 new languages and here are some steps I will follow, based on my research:
 
-1. Choose a project: i choosed the quiz game i want to have a specific goal in mind that will help me stay focus and motivated.
+1. Choose a project: I chose the quiz game I want to have a specific goal in mind that will help me stay focus and motivated.
 
 2. Find good resources: 
 
     a. Kotlin videos: https://www.youtube.com/playlist?list=PLrnPJCHvNZuAIbejjZA1kGfLeA8ZpICB2
+
     b. Kotlin offical documentation: https://kotlinlang.org/docs/getting-started.html
+
     c. TypeScript videos: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI
+
     d. TypeScript offical documentation: https://www.typescriptlang.org/docs/
+
     e. Create a web page with TypeScript: https://medium.com/@jaeho.kim/how-to-install-typescript-and-create-a-simple-webpage-cd60371a4bb3
 
 3. Learn the basics: I will focus only on understanding the fundamental concepts: syntax, data types, control structures and functions...
@@ -17,14 +21,15 @@ I want to learn 2 new languages and here are some steps i will follow, based on 
 4. Practice by writing code regularly
 
 	a. Kotlin probelm solving: https://exercism.org/tracks/kotlin
+
 	b. TypeScript problem solving: https://exercism.org/tracks/typescript
 
-5. Start building the quiz game to help me apply what i have learned and identify areas where i need to improve.
+5. Start building the quiz game to help me apply what I have learned and identify areas where i need to improve.
 
 6. Now in this step, i can improve my skills by learning advanced topics and best practices : books, blogs, articles, conferences or workshops and find challenging projects.
 
 
-Learning these languages is a gradual process, i have to take time, be patient and stay motivated.
+Learning these languages is a gradual process, I have to take time, be patient and stay motivated.
 
 
 # Overview of the quiz game
