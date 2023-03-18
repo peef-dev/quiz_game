@@ -1,4 +1,6 @@
-import rectangle.Rectangle
+package main.kotlin
+
+import main.kotlin.rectangle.Rectangle
 
 fun variables(): List<Any> {
     var a = 0
@@ -17,3 +19,21 @@ fun getRectangleArea(): List<Any> {
 fun showColor(rectangle: Rectangle, color: String): String {
     return rectangle.defineColorHex(color)
 }
+
+
+fun printMessage(message: String) {
+    println(message)
+}
+
+fun printMessageWithPrefix(message: String, prefix: String="Hello") {
+    println("[$prefix] $message")
+}
+
+fun sum(x: Int, y:Int): Int {
+    return x + y
+}
+
+fun multiply(x: Int, y: Int) = x*y
+
+
+

@@ -1,4 +1,4 @@
-package rectangle
+package main.kotlin.rectangle
 
 class Rectangle(width: Double, height: Double) {
 
