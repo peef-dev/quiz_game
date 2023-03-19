@@ -19,4 +19,18 @@ fun main() {
     println(printMessageWithPrefix(message = "Greeting", prefix = "GR"))
     println(sum(4, 5))
     println(multiply(4, 5))
+
+    infix fun Int.times(str: String) = str.repeat(this)
+    println(3 times "bye ")
+
+    infix fun String.putIn(fruits: Array<Any>) = fruits
+    var result = "mango" putIn arrayOf()
+    println(result)
+
+    fun artistNames(vararg names: String) {
+        for (name in names) println(name)
+    }
+
+    var names = arrayOf("Tayc", "Zoro")
+    artistNames(*names)
 }
