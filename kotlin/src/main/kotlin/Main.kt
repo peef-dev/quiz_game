@@ -23,9 +23,10 @@ fun main() {
     infix fun Int.times(str: String) = str.repeat(this)
     println(3 times "bye ")
 
-    infix fun String.putIn(fruits: Array<Any>) = fruits
-    var result = "mango" putIn arrayOf()
-    println(result)
+    infix fun String.putIn(fruits: Array<String>) = fruits + this
+    var fruits = arrayOf("banana")
+    fruits = "mango" putIn fruits
+    println(fruits.contentToString())
 
     fun artistNames(vararg names: String) {
         for (name in names) println(name)
