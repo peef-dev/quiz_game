@@ -33,5 +33,26 @@ fun main() {
     }
 
     var names = arrayOf("Tayc", "Zoro")
-    artistNames(*names)
+
+    var nullValue: Int? = 8 // means the nullValue can be null
+    nullValue = null
+    println(nullValue)
+
+    var canNotBeNull: Float = 7.9F
+    // canNotBeNull = null
+
+    getNullOrNot(null)
+    getNullOrNot(85)
+
+    var bookStore = Books("Design patterns", "SEO Mastery")
+    var books = bookStore.listBooks()
+    println(books)
+
+    BMW().start()
+    BMW().stop()
+
+    vehicle.vehicleName()
+
+    bike.bikeName()
+
 }
