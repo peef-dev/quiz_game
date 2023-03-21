@@ -9,12 +9,13 @@ class Rectangle(width: Double, height: Double) {
         return width * height
     }
 
-    fun defineColorHex(color: String): String =
-        when (color) {
+    fun defineColorHex(color: String): String {
+        val result = when (color) {
             "white" -> "#FFFFFF"
             "black" -> "#000000"
             else -> "Color not supported"
         }
-
+        return result
+    }
 
 }

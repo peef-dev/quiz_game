@@ -1,9 +1,11 @@
 package main.kotlin
 
+import main.kotlin.anime.Anime
 import main.kotlin.rectangle.Rectangle
 import main.kotlin.vehicle.ElectricVehicle
 import main.kotlin.vehicle.Vehicle
 import main.kotlin.vehicle.Bike
+import main.kotlin.anime.Mangas
 
 fun variables(): List<Any> {
     var a = 0
@@ -70,3 +72,11 @@ val vehicle: ElectricVehicle = Tesla()
 
 class BikeX3(name: String) : Bike(name=name, origin="Germany")
 val bike: Bike = BikeX3("x3")
+
+
+fun mangas() {
+    val animates =  Mangas(listOf(Anime("Blue Lock"), Anime("Blue Seed")))
+    for (anime in animates) {
+        println(anime.name)
+    }
+}

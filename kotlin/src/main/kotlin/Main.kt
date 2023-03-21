@@ -55,4 +55,6 @@ fun main() {
 
     bike.bikeName()
 
+    mangas()
+
 }
