@@ -80,3 +80,18 @@ fun mangas() {
         println(anime.name)
     }
 }
+
+fun exoMatrix() {
+    val matrix = arrayOf(
+        intArrayOf(9, 8, 7),
+        intArrayOf(5, 3, 2),
+        intArrayOf(6, 6, 7)
+    )
+    for (row in matrix){
+        for (cell in row){
+            print("$cell ")
+        }
+        println()
+    }
+
+}
