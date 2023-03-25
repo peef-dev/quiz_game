@@ -95,3 +95,46 @@ fun exoMatrix() {
     }
 
 }
+
+data class User(val name: String, val id:Int) {
+    override fun equals(other: Any?): Boolean {
+        return other is User && other.id == this.id
+    }
+}
+
+enum class Numbers4(private val n:Int) {
+    ONE(1),
+    TWO(2),
+    THREE(3),
+    FOUR(4);
+
+    fun isDividedBy2() = this.n % 2 == 0
+}
+
+fun computeTotal(price: Double, quantity: Int): Double {
+    var product = object {
+        var x_price: Double = price
+        var x_quantity: Int = quantity
+    }
+
+    return product.x_price * product.x_quantity
+}
+
+object Config {
+    fun getEnv(host:String, port:String): List<String> {
+        return listOf(host, port)
+    }
+}
+
+
+class Customer {
+    companion object Enterprise {
+        fun getType(type:String): String {
+            return if (type === "ENT") {
+                "Is Enterprise"
+            } else {
+                "Is Not Enterprise"
+            }
+        }
+    }
+}

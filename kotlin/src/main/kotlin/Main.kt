@@ -59,4 +59,20 @@ fun main() {
 
     exoMatrix()
 
+    var user1 = User("Bob", 1)
+    var user2 = User("John", 1)
+    var user3 = User("Doe", 2)
+
+    println(user1 == user2)
+    println(user1 == user3)
+
+    println(Numbers4.ONE.isDividedBy2())
+    println(Numbers4.TWO.isDividedBy2())
+
+    println(computeTotal(2.8, 5))
+
+    println(Config.getEnv("localhost", "2000"))
+
+    println(Customer.getType("YO"))
+
 }
