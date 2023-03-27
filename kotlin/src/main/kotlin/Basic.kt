@@ -102,6 +102,8 @@ data class User(val name: String, val id:Int) {
     }
 }
 
+fun User.getName(): String = this.name
+
 enum class Numbers4(private val n:Int) {
     ONE(1),
     TWO(2),
@@ -138,3 +140,14 @@ class Customer {
         }
     }
 }
+
+fun calculate(x: Int, y: Int, operation: (Int, Int) -> Int): Int {
+    return operation(x, y)
+}
+
+fun doSum(a: Int, b: Int): Int {
+    return a + b
+}
+
+val concatenate: (String, Int) -> String = {str, int -> str + int.toString()}
+

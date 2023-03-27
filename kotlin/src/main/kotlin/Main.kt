@@ -75,4 +75,10 @@ fun main() {
 
     println(Customer.getType("YO"))
 
+    println(calculate(1, 2, ::doSum))
+
+    println(calculate(2, 3) {a, b -> a*b})
+
+    println(concatenate("hello ", 3))
+
 }
