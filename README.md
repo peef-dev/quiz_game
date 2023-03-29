@@ -2,31 +2,27 @@
 
 I want to learn 2 new languages and here are some steps I will follow, based on my research:
 
-1. Choose a project: I chose the quiz game I want to have a specific goal in mind that will help me stay focus and motivated.
+1. Choose a project: I chose the quiz game because I want to have a specific goal in mind that will help me stay focus and motivated.
 
 2. Find good resources: 
 
-    a. Kotlin videos: https://www.youtube.com/playlist?list=PLrnPJCHvNZuAIbejjZA1kGfLeA8ZpICB2
+    a. Kotlin videos: https://www.youtube.com/@freecodecamp/search?query=kotlin
 
     b. Kotlin offical documentation: https://kotlinlang.org/docs/getting-started.html
 
-    c. TypeScript videos: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI
+    c. Kotlin Android documentation: https://developer.android.com/kotlin
 
-    d. TypeScript offical documentation: https://www.typescriptlang.org/docs/
+    d. TypeScript videos: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI
 
-    e. Create a web page with TypeScript: https://medium.com/@jaeho.kim/how-to-install-typescript-and-create-a-simple-webpage-cd60371a4bb3
+    e. TypeScript offical documentation: https://www.typescriptlang.org/docs/
 
-3. Learn the basics: I will focus only on understanding the fundamental concepts: syntax, data types, control structures and functions...
+    f. Create a web page with TypeScript: https://medium.com/@jaeho.kim/how-to-install-typescript-and-create-a-simple-webpage-cd60371a4bb3
 
-4. Practice by writing code regularly
+3. Learn the basics: I will focus only on understanding the fundamental concepts: syntax, data types, control structures and functions... and practice by writing code regularly
 
-	a. Kotlin probelm solving: https://exercism.org/tracks/kotlin
+4. Start building the quiz game to help me apply what I have learned and identify areas where i need to improve.
 
-	b. TypeScript problem solving: https://exercism.org/tracks/typescript
-
-5. Start building the quiz game to help me apply what I have learned and identify areas where i need to improve.
-
-6. Now in this step, i can improve my skills by learning advanced topics and best practices : books, blogs, articles, conferences or workshops and find challenging projects.
+5. Improve my skills by learning advanced topics and best practices : books, blogs, articles, conferences or workshops and find challenging projects.
 
 
 Learning these languages is a gradual process, I have to take time, be patient and stay motivated.
@@ -36,9 +32,9 @@ Learning these languages is a gradual process, I have to take time, be patient a
 
 It is a game that asks users a series of questions and keeps track of their score and provide feedback to the user after each question.
 
-## Backend
+## Rest API
 
-The backend API is built on Kotlin and provide the following functionalities:
+The API is built on Python/Flask and provide the following routes:
 
 - Retrieve a list of questions from a database (PostgreSQL is the one i like)
 - Randomize the order of the questions each time the game is played
@@ -46,27 +42,14 @@ The backend API is built on Kotlin and provide the following functionalities:
 - Keep in mind that: wrong answer: -1, no answer: 0, correct answer: +1
 - Do not forget unit test
 
-I don't know, maybe I have to choose a framework like Ktor (https://kotlinlang.org/docs/multiplatform-full-stack-app.html), Spring Boot or Jooby
+## Android and Web app
 
-## Frontend
+The Android app is built on Kotlin and web app is built on top of TypeScript.
 
-The frontend UI is built using TypeScript without any framework to make it simple so that i can learn more
+They provide the following functionalities:
 
 - Display a welcome screen with a "start game" button
 - Display each question one at a time, along with a list of possible answers
 - Highlight the correct answer after the user submits their choice
 - Display the user's score at the end of the game
 - Do not forget unit test
-
-
-## Final target is to learn
-
-
-- Server-side and frontend languages (Kotlin and TypeScript) and later Deno, instead of NodeJS
-- Cloud environments/ distributed systems/ microservices
-- Relational database
-- Testing frameworks (Cypress, JUnit)
-- Observability and monitoring (Datadog)
-- DevOps culture and tools (GitHub Actions, Gradle, Terraform)
-
-I'm already using [Peef](www.peef.dev) to learn more about Python development (API, Services)

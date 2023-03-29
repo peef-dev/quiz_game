@@ -83,4 +83,35 @@ fun main() {
 
     hamingDNA("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT")
 
+    println("Scrable score of Pinaple is ${scrabbleScore("Pinaple")}")
+
+    println("Difference of square ${differenceOfSquare(1, 10)}")
+
+    val empty = "test".let {
+        println(it.isEmpty())
+    }
+
+    val againEmpty = "test".run {
+        println(this.isEmpty())
+        println(this.length)
+    }
+
+    data class Configuration(
+        var port: String = "123",
+        var host: String = "localhost"
+    )
+    val config = Configuration()
+
+    with(config) {
+        println("$host:$port")
+    }
+
+    val newConf = Configuration()
+
+    val url = newConf.apply {
+        host = "Jake";
+        port = "yoo"
+    }.toString()
+    println(url)
+
 }

@@ -193,3 +193,30 @@ fun hamingDNA(originStrand: String, resultStrand: String): Int {
     return distance
 }
 
+fun scrabbleScore(word: String): Int {
+
+    var score = 0
+    for (char in word.uppercase()) {
+        when( char) {
+            'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T' -> score+=1
+            'D', 'G' -> score+=2
+            'B', 'C', 'M', 'P' -> score+=3
+            'F', 'H', 'V', 'W', 'Y' -> score+=4
+            'K' -> score+=5
+            'J', 'X' -> score+=8
+            'Q', 'Z' -> score+=10
+        }
+    }
+    return score
+
+}
+
+fun differenceOfSquare(min: Int, max: Int): Int {
+
+    val squareOfSum = (min..max).sum().let { it * it }
+    val sumOfSquare = (min..max).sumOf { it * it }
+
+    return squareOfSum - sumOfSquare
+
+}
+
