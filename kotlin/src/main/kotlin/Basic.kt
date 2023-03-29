@@ -151,3 +151,45 @@ fun doSum(a: Int, b: Int): Int {
 
 val concatenate: (String, Int) -> String = {str, int -> str + int.toString()}
 
+
+fun hamingDNA(originStrand: String, resultStrand: String): Int {
+
+    /* First implementation that is lazy but allow to use other collections methods */
+//    val bases = listOf('A', 'C', 'G', 'T');
+//    val goodStrand = originStrand.all { it in bases }
+//    var distance: Int = 0
+//    if (goodStrand) {
+//        var resultingStrands = originStrand zip resultStrand
+//        resultingStrands.forEach { strand -> strand.toList().distinct().count()
+//            if (strand.toList().distinct().count() != 1) {
+//                distance += 1
+//            }
+//        }
+//        println("The distance is $distance")
+//    } else {
+//        println("This is not a right DNA strand")
+//    }
+
+
+    /* More improved implementation */
+    require(originStrand.length == resultStrand.length) {"Strands must be equal length"}
+
+    val originStrandUpper = originStrand.uppercase()
+    val resultStrandUpper = resultStrand.uppercase()
+
+    require(originStrandUpper.all { it in "ACGT" }) {"Strands in originStrand is not a right DNA strand"}
+    require(resultStrandUpper.all { it in "ACGT" }) {"Strands in resultStrand is not a right DNA strand"}
+
+    var distance = 0
+
+    for (i in originStrandUpper.indices) {
+        if (originStrandUpper[i] != resultStrandUpper[i]) {
+            distance++
+        }
+    }
+
+    println("The distance is $distance")
+
+    return distance
+}
+

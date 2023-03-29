@@ -81,4 +81,6 @@ fun main() {
 
     println(concatenate("hello ", 3))
 
+    hamingDNA("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT")
+
 }
